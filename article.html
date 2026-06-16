@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Personal Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Ubuntu", sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 8px 0 8px 0;
+            border-bottom: 1px solid black;
+            margin-bottom: 12px;
+        }
+
+        .header .title {
+            cursor: pointer;
+        }
+
+        .header .navbar {
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+            justify-content: space-around;
+            gap: 14px;
+        }
+
+        .header .navbar a {
+            /* text-decoration: none; */
+            color: black;
+            font-size: 18px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            gap: 12px;
+        }
+
+        .content .image {
+            width: 100%;
+            border: 1px solid black;
+            /* border-bottom-left-radius: 15px; */
+            /* border-bottom-right-radius: 15px; */
+        }
+
+        .content .image img {
+            width: 100%;
+            border-bottom: 1px solid black;
+        }
+
+        .content .image .description {
+            text-align: center;
+            padding: 8px 0 8px 0;
+        }
+
+        footer {
+            display: flex;
+            padding: 18px 24px 18px 24px;
+            margin-top: 12px;
+            justify-content: space-between;
+            border-top: 1px solid black;
+        }
+
+        footer a {
+            color: black;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .wrapper {
+                width: 90%;
+            }
+        }
+
+        @media only screen and (max-width: 1140px) {
+            .wrapper {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h2 class="title" onclick="window.location='/'">Personal Blog</h1>
+            <ul class="navbar">
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/admin/new">+ New</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1><span onclick="window.history.back()" style="cursor: pointer;">←</span> Travel to Barcelona: Sagrada Familia and Street Food</h1>
+            <p>
+                Привіт. Це моя якась історія з життя, все придумано і зроблено <b>тільки</b> для заповнення простору в сторінці.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, odit sapiente provident nostrum perferendis
+                dicta illo dignissimos modi, esse earum consequatur hic quod quos! Cupiditate iste commodi libero illum asperiores!
+            </p>
+            <h2>Початок історії - як все починалось</h2>
+            <p>
+                Привіт. Це моя <em>якась історія з життя</em>, все придумано і зроблено тільки для заповнення простору в сторінці.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, odit sapiente provident nostrum perferendis
+                dicta illo dignissimos modi, esse earum consequatur hic quod quos! Cupiditate iste commodi libero illum asperiores!
+            </p>
+            <p>
+                Привіт. Це моя якась історія з життя, все придумано і зроблено тільки для заповнення простору в сторінці.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, odit sapiente provident nostrum perferendis
+                dicta illo dignissimos modi, esse earum consequatur hic quod quos! Cupiditate iste commodi libero illum asperiores!
+            </p>
+
+            <div class="image">
+                <img src="image.png" alt="Barcelona Fontain">
+                <div class="description">
+                    Barcelona Fontain - We Was Very Excited. Author: me
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="copyrigth">&copy; derfacn, 2026</div>
+            <div class="contacts">
+                <a href="mailto:me@derfacn.com">Email</a> | <a href="https://t.me/derfacn">Telegram</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
